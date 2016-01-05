@@ -1,0 +1,38 @@
+.carousel-indicators {
+  z-index: -1; }
+
+body #wrapper {
+  width: 960px;
+  margin: 0 auto;
+  font: 18px Tahoma, sans-serif; }
+  @media screen and (max-width: 960px) {
+    body #wrapper {
+      width: 100%; } }
+  @media screen and (max-width: 767px) {
+    body #wrapper .navbar-header {
+      text-align: center; }
+    body #wrapper ul {
+      text-align: center; }
+    body #wrapper .dropdown-menu {
+      text-align: center; } }
+  body #wrapper header img#logo {
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid orange;
+    margin: 5px; }
+  body #wrapper main #carousel {
+    height: 150px; }
+    body #wrapper main #carousel img {
+      height: 150px;
+      margin: 0 auto; }
+  body #wrapper main > section {
+    margin-top: 15px; }
+    body #wrapper main > section #sandwich-menu {
+      color: blue;
+      cursor: pointer; }
+      body #wrapper main > section #sandwich-menu:hover {
+        text-decoration: underline; }
+    body #wrapper main > section > aside.display-me {
+      display: block !important; }
+
+/*# sourceMappingURL=style.css.map */

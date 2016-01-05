@@ -1,8 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Page - Stanislav Stanev</title>
+    <link rel="stylesheet" href="styles/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/saas/style.css">
+
+</head>
 <body>
-<h1>Hello World</h1>
-<p><a href="https://en.wikipedia.org/wiki/Santa_Claus">This is my page. I want Iphone 6S.
-To Santa</a></p>
+<!--important col 12 is related to div id wrapper, thats why we must change with media query or put max-width 960 px-->
+<div id="wrapper">
+    <header class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+        <nav class="navbar navbar-default">
+
+            <div class="navbar-header">
+                <img id="logo" src="images/logo.jpg" alt="Logo Site">
+            </div>
+
+            <div class="container-fluid">
+                <!--remove class="navbar-collapse" collapse he hide navigation-->
+                <div>
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">About Me</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false">Project <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Team Projects</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Homework</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Single Project</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Relax Zone</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+    <main>
+        <!--CARROSEL-->
+        <div id="carousel" class="carousel slide col-lg-12 col-md-12 col-sm-12 col-xs-12" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+                <li data-target="#carousel" data-slide-to="3"></li>
+                <li data-target="#carousel" data-slide-to="4"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="images/Java.jpg" alt="java-logo">
+                    <!--<div class="carousel-caption">-->
+                    <!--<h3>Caption Text</h3>-->
+                    <!--</div>-->
+                </div>
+                <div class="item">
+                    <img src="images/C%23.png" alt="csharp-logo">
+                    <!--<div class="carousel-caption">-->
+                    <!--<h3>Caption Text</h3>-->
+                    <!--</div>-->
+                </div>
+                <div class="item">
+                    <img src="images/C.png" alt="c-logo">
+                    <!--<div class="carousel-caption">-->
+                    <!--<h3>Caption Text</h3>-->
+                    <!--</div>-->
+                </div>
+                <div class="item">
+                    <img src="images/Js.png" alt="js-logo">
+                    <!--<div class="carousel-caption">-->
+                    <!--<h3>Caption Text</h3>-->
+                    <!--</div>-->
+                </div>
+                <div class="item">
+                    <img src="images/HTML5.png" alt="HTML-logo">
+                    <!--<div class="carousel-caption">-->
+                    <!--<h3>Caption Text</h3>-->
+                    <!--</div>-->
+                </div>
+
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div> <!-- Carousel -->
+
+        <!--MAIN CONTENT-->
+
+        <section class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div id="sandwich-menu" class="hidden-lg hidden-md hidden-sm col-xs-12">
+                <span class="glyphicon glyphicon-menu-hamburger"></span>
+                Show tab menu
+            </div>
+<!--display-me-->
+            <aside class="col-lg-3 col-md-3 col-sm-4 hidden-xs ">
+                <!-- Nav tabs -->
+                <ul class="nav nav-pills nav-stacked" role="tablist">
+                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+                    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+                    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+                </ul>
+            </aside>
+
+            <section class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="home">Tip:  Plugins can be included individually (using Bootstrap's individual "carousel.js" file), or all at once (using "bootstrap.js" or "bootstrap.min.js").E</div>
+                    <div role="tabpanel" class="tab-pane" id="profile">Tip:  Plugins can be included individually (using Bootstrap's individual "carousel.js" file), or all at once (using "bootstrap.js" or "bootstrap.min.js").</div>
+                    <div role="tabpanel" class="tab-pane" id="messages">Tip:  Plugins can be included individually (using Bootstrap's individual "carousel.js" file), or all at once (using "bootstrap.js" or "bootstrap.min.js").</div>
+                    <div role="tabpanel" class="tab-pane" id="settings">Tip:  Plugins can be included individually (using Bootstrap's individual "carousel.js" file), or all at once (using "bootstrap.js" or "bootstrap.min.js").</div>
+                </div>
+            </section>
+        </section>
+
+
+    </main>
+    <footer>
+
+    </footer>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+
+<script>
+    $(window).ready(function(){
+        $("#sandwich-menu").on("click", function(){
+            $("aside").addClass("display-me");
+        });
+    });
+</script>
 </body>
 </html>
