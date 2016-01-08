@@ -5,7 +5,7 @@
 
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
 .row.content {
-  height: 450px; }
+  height: 550px; }
 
 /* Set gray background color and 100% height */
 .sidenav {
@@ -18,6 +18,8 @@ footer {
   background-color: #555;
   color: white;
   padding: 15px; }
+  footer p.footer-rights {
+    font-size: 0.8em; }
 
 /* On small screens, set height to 'auto' for sidenav and grid */
 @media screen and (max-width: 767px) {
@@ -33,5 +35,8 @@ a.navbar-brand img {
   margin: -10px;
   padding: 0;
   border-radius: 50%; }
+
+.navbar.navbar-inverse {
+  background-color: #2b542c !important; }
 
 /*# sourceMappingURL=style.css.map */
