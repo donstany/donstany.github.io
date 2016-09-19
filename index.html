@@ -1,134 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>The Personal Page - Stanislav Stanev</title>
+
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
-    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
-    <script src="bootstrap/jquery.min.js"></script>
-    <!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
-    <script src="bootstrap/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="styles/style.css">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Personal Web Pages - Stanislav Stanev</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/creative.min.css" rel="stylesheet">
+
+    <!-- Animate CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+    <style>
+        .item{
+            -webkit-animation-duration: 3s;
+            -webkit-delay:3s;
+        }
+        .bounce1{
+            color:white ;
+        }
+    </style>
+  
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
-<body>
-<!--Google analitics-->
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-70471460-2', 'auto');
-    ga('send', 'pageview');
+<body id="page-top">
+    <!--Google analitics-->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-70471460-2', 'auto');
+            ga('send', 'pageview');
+        </script>
+    <!--Google analitics-->
 
-</script>
-<!--Google analitics-->
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">
-                <img src="images/logo.jpg" alt="logo" style="width: 70px; height: 70px;">
-            </a>
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Donstany</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact and CV</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <!--<li><a href="#">All Projects</a></li>-->
-                <li><a href="pages/about/about.html">About Me</a></li>
-                <li><a href="pages/contacts/contacts.html">Contact Me</a></li>
-            </ul>
-            <!--<ul class="nav navbar-nav navbar-right">-->
-            <!--<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
-            <!--</ul>-->
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">The Future is Now</h1>
+                <hr/>
+                <p>COME WITH ME TO DISCOVER A NEW WORLDS</p>
+                 <hr/>
+                <p  class="item-anim animated fadeInDownBig"><strong><a class="bounce1" href="/pdf/mta_microsoft_certificate_stanislav_stanev.png" target="_blank">Microsoft Certified .Net Developer</a></strong></p>
+                <p  class="item-anim animated fadeInUpBig" style="font-color:white;" > <strong><a class="bounce1" href="https://softuni.bg/Certificates/Details/8941/c55040f0" target="_blank" >Java Certified Web Developer</a></strong></p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+            </div>
         </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">My Inspiration</h2>
+                    <hr class="light">
+                    <p class="text-faded">There is always next mile. There is always something "genius" invented at a time. But as it is vast
+amazingly complicated things are amazingly simple!</p>
+                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">At Your Service</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
+                        <h3>Sturdy Templates</h3>
+                        <p class="text-muted">More over 500+ templates/tasks are updated regularly so they don't break!</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
+                        <h3>Ready to Ship</h3>
+                        <p class="text-muted">You can use this templates/projects as is, or you can make changes!</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
+                        <h3>WikipediA contribution</h3>
+                        <p class="text-muted">Main founder like #donstany of bulgarian Wiki page - SOLID principles OOP!</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
+                        <h3>Made with Love and passion</h3>
+                        <p class="text-muted">Every single project and even code snippets are made with love!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter popup-gallery">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">
+											<img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt=""> 
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    § GO DOWN TO CV ZONE 
+                                </div>
+                                <div class="project-name">
+                                   <div>Microsoft Certification - Software Development Fundamentals</div>
+                               </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/2.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    § GO DOWN TO CV ZONE 
+                                </div>
+                                <div class="project-name">Java Certification - Java Web Development
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/3.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    § GO DOWN TO CV ZONE 
+                                </div>
+                                <div class="project-name">
+                                    Bulgarian version about SOLID principles in Object-Oriented Design
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/4.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/4.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    § GO DOWN TO GIT HUB ZONE 
+                                </div>
+                                <div class="project-name">
+                                    GIT HUB PROJECTS
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/5.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/5.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    § GO DOWN TO GIT HUB ZONE 
+                                </div>
+                                <div class="project-name">
+                                    Deployed applications in Cloud
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/6.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/6.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                     § GO DOWN TO CV ZONE 
+                                </div>
+                                <div class="project-name">
+                                    Certification - Teamwork and Personal Skills
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2 >GITHUB  ZONE</h2>
+                <a href="https://github.com/donstany/ExamsAndHomework" class="btn btn-default btn-xl sr-button">GO TO PROJECTS!</a>
+            </div>
+        </div>
+    </aside>
+    <aside class="bg-primary">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2 >CV  ZONE</h2>
+                <a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-xl sr-button">Download Now!</a>
+            </div>
+        </div>
+    </aside>
+
+    <section id="contact">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <hr class="primary">
+                    <p>Ready to discover new horizons! Connect with me directly in LinkedIn  or send email and I will get back to you as soon as possible!</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-linkedin fa-3x sr-contact"></i>
+                    <p><a href="https://www.linkedin.com/in/stanislav-stanev-35419044?authType=NAME_SEARCH&authToken=VoEQ" target="_blank">LinkedIn profile</a></p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-mail-reply-all fa-3x sr-contact"></i>
+                    <p>donstany79@gmail.com</p>
+                </div>
+            </div>
+    </section>
+
+    <div id="created-by">
+        <hr class="primary">
+        <div style="margin-bottom:20px;" class="col-lg-8 col-lg-offset-2 text-center">
+           &copy; Created by Stanislav Stanev version 3.0/2016 - Donstany project
+        </div>
+    
     </div>
-</nav>
 
-<div class="wrapper">
-    <div class="container-fluid text-center">
-        <div class="row content">
-            <div class="col-sm-2 sidenav">
-                <a href="https://github.com/donstany" target="_blank"><p><strong>TEAM PROJECTS</strong></p></a>
-                <a href="https://github.com/donstany/ExamsAndHomework.git" target="_blank"><p><strong>EXAMS & HOMEWORK</strong></p></a>
-                <a href="https://github.com/donstany/donstany.github.io" target="_blank"><p><strong>SINGLE PROJECTS</strong></p></a>
-                <a href="https://bg.wikipedia.org/wiki/SOLID_(%D0%BE%D0%B1%D0%B5%D0%BA%D1%82%D0%BD%D0%BE-%D0%BE%D1%80%D0%B8%D0%B5%D0%BD%D1%82%D0%B8%D1%80%D0%B0%D0%BD%D0%BE_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B8%D1%80%D0%B0%D0%BD%D0%B5)" target="_blank"><p><strong>WIKI PAGE FOR SOLID PRINCIPLES IN OOP</strong></p></a>
-            </div>
-            <div class="col-sm-8 text-justify">
-                <h1 class="header-headings">Welcome to my world!</h1>
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- jQuery animation -->
 
-                <h3 class="header-headings">Stanislav Stanev - personal pages</h3>
 
-                <div class="main-content">
-                    <p>With the following page I would like to demonstrate the projects in which I was involved.</p>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-                    <p>The projects are mainly related to my education at <strong>Software University started in January 2015</strong> .</p>
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
-                    <p>All are made with different programming languages and technologies.</p>
-
-                    <p>During the process of education I would like to try working with different languages in order to acquire a better basis for comparison and to be able to choose the most suitable for me.</p>
-                    <p>Languages like <strong>Java, C# and Javascript</strong> are affected and used the <strong>principles of OOP, SOLID Principles and High Quality Code</strong>.</p>
-
-                    <p>You will be able to find projects realized with the following languages (for more details see the content in the parentheses):</p>
-                    <ul>
-                        <li><a href="https://github.com/donstany/e-hub" target="_blank"><strong><span style="color:red"><blink>E-HUB share center</blink></span> Java Project (dynamic web pages using: Java EE, Maven, Spring Framework, RDBMS Postgree, Bootstrap,  JQuery, CSS 3, HTML 5)</strong>;</a></li>
-                        <li><strong>Java (Java SE, Java FX)</strong>;</li>
-                        <li><strong>C# (.Net Framework)</strong>;</li>
-                        <li><strong>C Programming (console app under Linux Ubuntu)</strong>;</li>
-                        <li><strong>SQL (MS SQL Server, Oracle Database 12c, MySQL, Postgree)</strong>;</li>
-                        <li><strong>HTML5/CSS3 (Bootsrtap, Sass, Emmet)</strong>;</li>
-                        <li><strong>JavaScript</strong>;</li>
-                    </ul>
-                    <p>On the left side you can choose among the following sections:</p>
-                    <ul>
-                        <li>Team project where you will find projects realized in a team with colleagues from Software University from 2 to 5 people. ${<strong>3 Games</strong>}
-                        </li>
-                        <li>Exams and homework you will find numerous short tasks confirming the studied material. ${<strong>over 400 tasks</strong>}</li>
-                        <li>Single project you  will find separate projects. ${<strong>1 Website</strong>}</li>
-                        <li><strong>Wiki Page - SOLID principles in Object Oriented Programming (OOP) and Design.</strong> Team project from 2 people that are translated from English to Bulgarian and extended page for fundamental principles in OOP.</li>
-                    </ul>
-                    <p>On the right side there are links to the Certifications, obtained after I graduated from the <strong>CodeAcademy</strong> and the Universities.</p>
-                    <p>Enjoy it!</p>
-                </div>
-                <!--<hr>-->
-                <!--<h3>Test</h3>-->
-                <!--<p>Lorem ipsum...</p>-->
-            </div>
-            <div class="col-sm-2 sidenav">
-                <div class="well">
-                    <a href="https://www.codecademy.com/donstany" target="_blank"><p><strong>Certifications</strong></p></a>
-                </div>
-                <div class="well">
-                    <a href="https://softuni.bg/" target="_blank"><p><strong>Software University</strong></p></a>
-                </div>
-                <div class="well">
-                    <a href="http://www.tu-varna.bg/" target="_blank"><p><strong>Technical University #Varna</strong></p></a>
-                </div>
-                <div class="well">
-                    <a href="http://www.ue-varna.bg/" target="_blank"><p><strong>University of Economics #Varna</strong></p></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<footer class="container-fluid text-center">
-    <p><a href="https://www.linkedin.com/in/stanislav-stanev-35419044?authType=NAME_SEARCH&authToken=VoEQ" style="color:white;">
-        <strong>LinkedIn profile</strong></a>
-    </p>
-
-    <p class="footer-rights">&copy; 2015-2016 - Donstany project. All Rights Reserved.</p>
-
-    <p class="footer-rights">Designed by Stanislav Tsonev Stanev. version 2.0</p>
-</footer>
-
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
+   <script>
+        $('#bounce1').on('click', function(){
+            $('#bounce1').addClass('animanted shake');
+        });
+    </script>
+ 
 
 </body>
 
