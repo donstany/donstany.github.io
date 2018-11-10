@@ -1,4 +1,4 @@
-**Welcome to Stanev's GitHub projects**
+***Welcome to Stanev's GitHub projects ***
 =====================================
 -----------------------------------
 I. Java Web Development track in Software University
