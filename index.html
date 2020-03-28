@@ -364,7 +364,7 @@ counter"></a></div></noscript>
     <div id="created-by">
         <hr class="primary">
         <div id="footer" style="margin-bottom:20px;" class="col-lg-8 col-lg-offset-2 text-center">
-           &copy; Created by Stanislav Stanev version 4.0 || 2016/2020 - Donstany's project
+           &copy; Created by Stanislav Stanev version 5.0 || 2016/<span id="year"></span> - Donstany's project
         </div>
     
     </div>
@@ -389,6 +389,7 @@ counter"></a></div></noscript>
         $('#bounce1').on('click', function(){
             $('#bounce1').addClass('animanted shake');
         });
+        document.getElementById("year").innerHTML = new Date().getFullYear();
     </script>
  
      <script src="js/main.js"></script> <!-- Gem jQuery -->
